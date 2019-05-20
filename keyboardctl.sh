@@ -63,7 +63,7 @@ function interactive() {
 while getopts "d:w:ik:" opt; do
 	case ${opt} in
 		d) DISPLAY=${OPTARG} export DISPLAY;;
-		w) WINDOW=$(xdotool search --name chrome | tail -n 1) export WINDOW;;
+		w) WINDOW=$(xdotool search --name ${OPTARG} | tail -n 1) export WINDOW;;
 		i) interactive ;;
 		k) KEY=${OPTARG} ;;
 		*) usage ;;
