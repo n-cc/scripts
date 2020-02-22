@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-VERBOSE=0
+VERBOSE=
 COUNT=20
 
 usage(){
